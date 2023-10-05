@@ -1,10 +1,8 @@
 {
   "name": "deployment-history",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A small function that saves files",
   "main": "dist/index.js",
-  
-
   "repository": {
     "type": "git",
     "url": "https://github.com/GreatApe78/deployment-history.git"
