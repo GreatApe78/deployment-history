@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require("fs")
 
 /**
  * @dev saves a deployed contract information

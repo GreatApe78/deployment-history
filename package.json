@@ -1,14 +1,17 @@
 {
   "name": "deployment-history",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A small function that saves files",
   "main": "dist/index.js",
+  
+
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/GreatApe78/deployment-history.git"
   },
   "scripts": {
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mateus",
   "license": "MIT",
