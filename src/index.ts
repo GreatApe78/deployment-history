@@ -8,7 +8,7 @@ import fs from 'fs';
  */
 function saveDeployment(
 	contractAddress = 'No address provided',
-	network = 'No provided',
+	network = 'No network provided',
 	path = './artifacts/deployment-history.txt'
 ) {
 	const divisor =
