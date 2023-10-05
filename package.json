@@ -2,7 +2,11 @@
   "name": "deployment-history",
   "version": "1.0.0",
   "description": "A small function that saves files",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "build": "npx tsc"
   },
