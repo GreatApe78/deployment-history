@@ -3,6 +3,14 @@
 
 This npm package contains a util function for storing contract addresses inside artifacts folder in hardhat (can be changed)
 
+## Installation
+
+Install deployment-history as a dev dependency with npm
+
+```bash
+  npm install -D deployment-history
+```
+    
 
 ## Usage/Examples
 
@@ -41,7 +49,8 @@ main().catch((error) => {
 
 ## Output
 
-Result inside the txt file :
+The default output file is inside the .gitignored artifacts folder provided by hardhat as deployment-history.txt
+
 ```bash
 
 ##############################################################################
