@@ -4,9 +4,12 @@
   "description": "A small function that saves files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "author": "Mateus",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  }
 }

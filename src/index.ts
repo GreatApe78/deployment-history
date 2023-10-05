@@ -1,5 +1,4 @@
-const fs = require("fs")
-
+import fs from 'fs';
 
 /**
  * @dev saves a deployed contract information
@@ -14,7 +13,6 @@ function saveDeployment(contractAddress="No address provided",network="No provid
     console.log("Deployment saved")
 }
 
-
-module.exports={
+export {
     saveDeployment
 }
