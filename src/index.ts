@@ -1,25 +1,30 @@
 const fs = require("fs")
 
+
+
+
 /**
- * @dev saves a deployed contract information
- * @param {string} contractAddress Address of the contract you want to save 
- * @param {string} network The network name
- * @param {string} path The path you want to save
+ * Save useful smart contract information deployment in a file
+ * @param contractAddress Contract address
+ * @param contractName Contract name
+ * @param network Network name
+ * @param path Path to save the file (default: ./artifacts/deployment-history.txt)
  */
 function saveDeployment(
 	contractAddress = 'No address provided',
+	contractName = 'Contract',
 	network = 'No network provided',
 	path = './artifacts/deployment-history.txt'
 ) {
-	const divisor =
-		'##############################################################################\n';
+	const superiorDivisor ='____________________CONTRACT____________________\n';
+	const inferiorDivisor ='________________________________________________\n';
 	const deploymentString =
-		divisor +
-		`Deployed: ${contractAddress}\n Network:${network}\n Date: ${new Date().toString()} \n` +
-		divisor;
+		superiorDivisor +
+		`Deployed ${contractName}: ${contractAddress}\nNetwork: ${network}\nDate: ${new Date().toString()}\n` +
+		inferiorDivisor;
 	fs.appendFileSync(path, deploymentString, { encoding: 'utf-8' });
-	console.log(`Deployment saved in ${path}`);
 }
+
 export {
-    saveDeployment
+	saveDeployment
 }
