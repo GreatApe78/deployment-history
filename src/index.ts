@@ -9,6 +9,11 @@ const fs = require("fs")
  * @param contractName Contract name
  * @param network Network name
  * @param path Path to save the file (default: ./artifacts/deployment-history.txt)
+ * 
+ * Example of use:
+ * ```typescript
+ * saveDeployment('0x123456789', 'MyContract', 'rinkeby')
+ * ```
  */
 function saveDeployment(
 	contractAddress = 'No address provided',
