@@ -53,16 +53,16 @@ The default output file is inside the .gitignored artifacts folder provided by h
 
 ```bash
 
-##############################################################################
-Deployed: Address
- Network:Network
- Date: Thu Oct 05 2023 15:57:35 GMT-0300 (Brasilia Standard Time) 
-##############################################################################
-##############################################################################
-Deployed: Address
- Network:Network
- Date: Thu Oct 05 2023 15:57:37 GMT-0300 (Brasilia Standard Time) 
-##############################################################################
+____________________CONTRACT____________________
+Deployed MyContract: 0x1234
+Network: rinkeby
+Date: Mon Dec 18 2023 10:53:47 GMT-0300 (Brasilia Standard Time)
+________________________________________________
+____________________CONTRACT____________________
+Deployed MyContract: 0x1234
+Network: rinkeby
+Date: Mon Dec 18 2023 10:57:35 GMT-0300 (Brasilia Standard Time)
+________________________________________________
 
 
 ```
