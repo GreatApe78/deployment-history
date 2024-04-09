@@ -1,35 +1,32 @@
-const fs = require("fs")
+import { appendFileSync } from "node:fs";
 
-
-
+type Options = {
+	contractAddress?: string;
+	contractName?: string;
+	network?: string;
+	path?: string;
+};
 
 /**
- * Save useful smart contract information deployment in a file
- * @param contractAddress Contract address
- * @param contractName Contract name
- * @param network Network name
- * @param path Path to save the file (default: ./artifacts/deployment-history.txt)
- * 
- * Example of use:
- * ```typescript
- * saveDeployment('0x123456789', 'MyContract', 'rinkeby')
- * ```
+ * Write deployment information to a file
+ * @param {Options} configuration object
  */
 function saveDeployment(
-	contractAddress = 'No address provided',
-	contractName = 'Contract',
-	network = 'No network provided',
-	path = './artifacts/deployment-history.txt'
+	
+	{
+		contractAddress = "No address provided",
+		contractName = "Contract",
+		network = "No network provided",
+		path = "./artifacts/deployment-history.txt",
+	}: Options
 ) {
-	const superiorDivisor ='____________________CONTRACT____________________\n';
-	const inferiorDivisor ='________________________________________________\n';
+	const superiorDivisor = "____________________CONTRACT____________________\n";
+	const inferiorDivisor = "________________________________________________\n";
 	const deploymentString =
 		superiorDivisor +
 		`Deployed ${contractName}: ${contractAddress}\nNetwork: ${network}\nDate: ${new Date().toString()}\n` +
 		inferiorDivisor;
-	fs.appendFileSync(path, deploymentString, { encoding: 'utf-8' });
+	appendFileSync(path, deploymentString, { encoding: "utf-8" });
 }
 
-export {
-	saveDeployment
-}
+export { saveDeployment,Options };
