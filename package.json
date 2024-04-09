@@ -1,6 +1,6 @@
 {
   "name": "deployment-history",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "A simple tool to keep track of your deployments",
   "main": "dist/index.js",
   "repository": {
@@ -13,7 +13,7 @@
   "author": "Mateus",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.8.2",
+    "@types/node": "^20.12.6",
     "typescript": "^5.2.2"
   }
 }
